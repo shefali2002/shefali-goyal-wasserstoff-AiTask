@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Extractor</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+    }
+    #content {
+      height: 200px;
+      overflow-y: scroll;
+      white-space: pre-wrap;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    input {
+      width: calc(100% - 20px);
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+    }
+    .response-text {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">Loading content...</div>
+  <input type="text" id="query" placeholder="Ask something...">
+  <button id="askButton">Ask</button>
+  <label for="response" id="responseLabel">Response:</label> <!-- Updated here -->
+  <div id="response"></div>
+  <button id="saveButton">Save to File</button>
+  <script src="popup.js"></script>
+</body>
+</html>

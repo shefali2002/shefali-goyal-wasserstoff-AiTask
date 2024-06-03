@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Dynamic Chatbot",
+  "version": "1.0",
+  "description": "Answers the question based on the webpage content the user navigates to",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "downloads"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon":  "bot16.png"
+   
+  }
+}
